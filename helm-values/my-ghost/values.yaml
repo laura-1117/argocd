@@ -1,6 +1,6 @@
 # values.yaml
 replicaCount: 1
-image: swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/ghost
+image: swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/ghost:5.104.2-alpine
 node_env: production
 url: ghost.k8s.local
 

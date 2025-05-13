@@ -1,0 +1,9 @@
+# values.yaml
+replicaCount: 2
+image: orbit-registry-vpc.cn-beijing.cr.aliyuncs.com/default/ubuntu:24.04-1
+node_env: production
+url: ghost.k8s.local
+
+service:
+  type: NodePort
+  port: 80

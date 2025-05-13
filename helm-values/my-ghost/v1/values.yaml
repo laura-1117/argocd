@@ -1,6 +1,6 @@
 # values.yaml
 replicaCount: 1
-image: orbit-registry-vpc.cn-beijing.cr.aliyuncs.com/default/ubuntu:24.04-1
+image: orbit-registry.cn-beijing.cr.aliyuncs.com/default/ubuntu:24.04-1
 node_env: production
 url: ghost.k8s.local
 

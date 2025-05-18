@@ -1,5 +1,5 @@
 # values.yaml
-replicaCount: 2
+replicaCount: 1
 image: ghost
 node_env: production
 url: ghost.k8s.local

@@ -1,0 +1,9 @@
+# values.yaml
+replicaCount: 2
+image: ghost
+node_env: production
+url: ghost.k8s.local
+
+service:
+  type: NodePort
+  port: 80

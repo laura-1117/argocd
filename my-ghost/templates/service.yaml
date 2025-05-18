@@ -1,0 +1,18 @@
+# templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: ghost
+spec:
+  selector:
+    app: ghost-app
+  type: {{ .Values.service.type }}
+  ports:
+    - protocol: TCP
+      targetPort: 2368
+      port: {{ .Values.service.port }}
+      {{- if (and (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) (not (empty .Values.service.nodePort))) }}
+      nodePort: {{ .Values.service.nodePort }}
+      {{- else if eq .Values.service.type "ClusterIP" }}
+      nodePort: null
+      {{- end }}
